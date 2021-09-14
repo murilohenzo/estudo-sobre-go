@@ -38,3 +38,16 @@
     fmt.Println("Escrevendo do pacote auxiliar")
   }
 ```
+### Packages
+- Compilar os pacotes e dependencias
+```sh
+  go build
+```
+- Adicionar um pacote externo a aplicacao
+```sh
+  got get package_name
+```
+- Remover dependencias nao utilizadas
+```sh
+  go mod tidy
+```
