@@ -8,7 +8,6 @@
 * Sem classes, mas estruturas com métodos
 * Interfaces
 * Sem herança de implementação. No entanto, há [type embedding] (http://golang.org/doc/effective%5Fgo.html#embedding).
-* Funções são cidadãos de primeira classe
 * As funções podem retornar vários valores
 * Possui fechamentos
 * Ponteiros, mas não aritmética de ponteiros
