@@ -25,6 +25,15 @@ func write(text string, numbers ...int) {
 		fmt.Println(text, number)
 	}
 }
+
+// funcao recursiva
+func fibonacci(position uint) uint {
+	if position <= 1 {
+		return position
+	}
+
+	return fibonacci(position - 2) + fibonacci(position - 1)
+}
  
 func main() {
 	fmt.Println(mathematicalCalculations(2, 3))
@@ -45,4 +54,8 @@ func main() {
 	}("Funcao anonima com parametros")
 
 	fmt.Println(retornoDeUmaFuncaoAnonima)
+
+	for i := uint(0); i < 10; i++ {
+		fmt.Println(fibonacci(i))
+	}
 }
