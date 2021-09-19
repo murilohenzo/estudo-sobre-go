@@ -50,3 +50,6 @@
 ```sh
   go mod tidy
 ```
+
+## Concorrência x Paralelismo
+- Concorrência é sobre lidar com várias coisas ao mesmo tempo e paralelismo é sobre fazer várias coisas ao mesmo tempo. Concorrência é um conceito mais a nível de software e paralelismo mais a nível de hardware.
