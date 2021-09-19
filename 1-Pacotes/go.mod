@@ -1,4 +1,4 @@
-module module
+module auxiliar
 
 go 1.17
 

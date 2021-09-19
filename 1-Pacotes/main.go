@@ -1,8 +1,8 @@
 package main
 
 import (
+	"auxiliar/auxiliar"
 	"fmt"
-	"module/auxiliar"
 	"github.com/badoux/checkmail"
 )
 
