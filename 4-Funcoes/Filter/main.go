@@ -5,7 +5,7 @@ import "fmt"
 type FilterCallback = func(value int) bool
 
 func filter(array []int, callback FilterCallback) []int {
-	newArray := []int{}
+	var newArray []int
 
 	for i := 0; i < len(array); i++ {
 		if callback(array[i]) {
