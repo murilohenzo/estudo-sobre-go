@@ -7,8 +7,8 @@ type TestScenery struct {
 	expect   string
 }
 
-func TestTypeAddress(t *testing.T) {
-	testSceneries := []TestScenery{
+func TestTypeAddress(it *testing.T) {
+	testSceneriesMock := []TestScenery{
 		{"Rua ABC", "Rua"},
 		{"RUA ABC", "Rua"},
 		{"AVENIDA ABC", "Avenida"},
@@ -17,11 +17,14 @@ func TestTypeAddress(t *testing.T) {
 		{"", "Invalid type"},
 	}
 
-	for _, scenery := range testSceneries {
-		receivedTypeAddress := TypeAddress(scenery.received)
-		if receivedTypeAddress != scenery.expect {
-			t.Errorf("\nO tipo recebido eh diferente do esperado!"+
-				"\nexpect = [%s]\nreceived = [%s]", scenery.expect, receivedTypeAddress)
+	it.Run("Validation type address", func(t *testing.T) {
+		for _, scenery := range testSceneriesMock {
+			got := TypeAddress(scenery.received)
+			if got != scenery.expect {
+				t.Errorf("\nO tipo recebido eh diferente do esperado!"+
+					"\nexpect = [%s]\nreceived = [%s]", scenery.expect, got)
+			}
 		}
-	}
+	})
+
 }

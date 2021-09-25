@@ -1,0 +1,9 @@
+{
+  "name": "",
+  "age": 5,
+  "courses": [
+    {
+      "name": "Golang to hero"
+    }
+  ]
+}
