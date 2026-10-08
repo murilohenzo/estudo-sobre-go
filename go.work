@@ -1,0 +1,7 @@
+go 1.22
+
+use (
+	./1-Pacotes
+	./16-AplicacaoLinhaDeComando
+	./19-Testes/1-introducao
+)

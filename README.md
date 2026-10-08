@@ -20,6 +20,46 @@
   go mod init name_module
 ```
 
+### Estrutura do projeto
+- Cada pasta numerada representa um tema de estudo com exemplos autocontidos.
+- Os exemplos que possuem dependências externas possuem seu próprio `go.mod`.
+- Use o workspace (`go.work`) na raiz para navegar entre módulos com facilidade.
+
+```sh
+  # baixa dependências e mantém o workspace sincronizado
+  go work sync
+
+  # executa um exemplo específico
+  go run ./4-Funcoes
+```
+
+### Mapa de estudos
+- 1-Pacotes: organização de pacotes e módulos.
+- 2-Variaveis: variáveis e tipos básicos.
+- 3-TiposDeDados: tipos primitivos e conversões.
+- 4-Funcoes: funções e padrões comuns.
+- 5-Structs: structs e composição básica.
+- 6-Pseudo-Heranca-Composicao: composição e embedding.
+- 7-Ponteiros: ponteiros e passagem por referência.
+- 8-Array-Slice: arrays, slices e matrizes.
+- 9-Maps: mapas e operações.
+- 10-Estruturas-De-Controle: if/else e controle de fluxo.
+- 11-Switch: uso de switch.
+- 12-Loops: laços for.
+- 13-Funcoes Avancadas: defer, closures, init e panic/recover.
+- 14-Metodos: métodos em structs e interfaces básicas.
+- 15-Interfaces: interfaces e exemplos genéricos.
+- 16-AplicacaoLinhaDeComando: app CLI com dependências externas.
+- 17-Concorrencia: goroutines, channels e wait groups.
+- 18-ConcurrencyPatterns: padrões de concorrência.
+- 19-Testes: exemplos de testes e estrutura de pacotes.
+- 20-Go1.22-Novidades: estudos sobre novidades do Go 1.22.
+
+### Novidades do Go 1.22
+- `for range` sobre inteiros (ex.: `for i := range 5`) para iterações simples.
+- Variáveis de `range` passam a ser recriadas por iteração, evitando capturas erradas em closures.
+- Confira exemplos na pasta `20-Go1.22-Novidades`.
+
 ### Functions
 
 - Function com a primeira letra minuscula significa que ela eh visivel somente dentro do pacote, ou um convencao de ser um metodo privado do pacote pertencente.
